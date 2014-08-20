@@ -1,0 +1,70 @@
+#profile {
+	margin-top: 50px;
+	background-color: #be7169;
+	color: white;
+}
+
+.animate {
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.animate:hover {
+	box-shadow: 
+	-1px 1px 0px 0px #fff,
+	-2px 2px 0px 0px #aaa,
+	-3px 3px 0px 0px #fff,
+	-4px 4px 0px 0px #aaa,
+	-5px 5px 0px 0px #fff,
+	-6px 6px 0px 0px #aaa,
+	-7px 7px 0px 0px #fff,
+	-9px 9px 0px 0px #adadad,  /*3D bottom border colour*/
+	-5px 5px 40px 0px rgba(0,0,0,0.50);
+	-webkit-transform: translate(8px, -8px);
+}
+
+/* delete me */
+#pic {
+	width: 100px;
+	height: 100px;
+}
+
+.profile-name {
+	font-size: 26px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100; 
+}
+
+.profile-info {
+	display:block;
+	padding-top: 20px;
+}
+
+.tile {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+	box-shadow: 1px 1px 10px gray;
+}
+
+.heading{
+	font-size: 32px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100; 
+}
+
+.entry {
+	min-height: 300px;
+	background-color: #F0F0F0;
+}
+
+.entry:hover {
+	background-color: #FFFFFF;
+}
+
+.entry-img {
+	max-height: 300px;
+}
