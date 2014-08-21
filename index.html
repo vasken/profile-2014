@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Robert</title>
+	<title>Robert | I build things</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,12 @@
 </head>
 <body>
 
-<div id="page1" class="container-fluid">
+<div id="page1" class="container-fluid"
+	data-0="background-color: rgb(255,255,255);"
+	data-250="background-color: rgb(220,220,220);">
 	<div class="row-fluid">
 		<div class="col-md-2">
-			<div id="profile" class="tile animate">
+			<div id="profile" class="tile">
 				<img id="pic" src="img/me.jpg" alt="me" class="img-responsive center-block img-circle">
 				<span id="name" class="profile-name">
 					Robert Beghian
@@ -48,7 +50,7 @@
 				<div class="col-sm-6">
 					<div id="apps" class="tile heading entry text-center animate">
 						<img src="img/apps-isometric.png" alt="apps" class="entry-img center-block img-responsive img-rounded">
-						Mobile Apps
+						Phone Apps
 					</div>
 				</div>
 			</div>
@@ -69,10 +71,102 @@
 		</div>
 	</div>
 </div>
+<div id="page2" class="container-fluid"
+	data-500="background-color: rgb(220,220,220);"
+	data-top="background-color: rgb(255,255,255);">
+	<div 
+		data-0="opacity: 0"
+		data-500="opacity: 1">
+		<h2>Devices</h2>
+		<p>eInk readers are devices designed to mimic the experience of reading on a regular piece of paper. 
+		They have with high res, low-glare screens which last for months before needing to be charged and can carry a user's entire library.
+		</p>
+		
+		<p>In 2010 I started working on Kobo's first eInk device. Soon after, "The Kobo" was born. 
+		It had a big blue button and it would sync your library via bluetooth from a Blackberry device. 
+		Over the next four years, I helped create 8 eReaders which got bigger, faster and prettier.
+		</p>
+
+		<p> The device is built using C++ and the Qt framework and runs on top of Linux. 
+		Having been on the project from the very beginning gave me an opportunity to work on pretty much every aspect of it.
+		In particular, I've spent a bunch of time working on the persistance layer (including a custom cache) and the syncing component. 
+		I've also helped improve the speed and reliability of opening books and wifi connectivity.
+		</p>
+	</div>
+</div>
+<div id="page3" class="container-fluid"
+	data-0="background-color: rgb(255,255,255);"
+	data-top="background-color: rgb(220,220,220);">
+	<div>
+		<h2>Phone Apps</h2>
+		<p>
+		Android is an operating system built by Google, which today powers more mobile devices than Windows and iOS combined.
+		</p>
+
+		<p>In spring 2008, I built a prototype Android application which I used as part of a pitch to Y Combinator.
+		While they didn't like us enough to fund us, I became a big believer in Android as a platform.
+		Later in 2008, I prototyped the original Kobo(at the time called Shortcovers) phone app for Android. 
+		I eventually started working on it full time and released it to the public early 2009.
+		</p>
+
+		<p>
+		Since then, I've been playing with apps in my spare time. I've published over three dozen free, simple applications which have been downloaded by millions of users.
+		</p>
+	</div>
+</div>
+<div id="page4" class="container-fluid"
+	data-0="background-color: rgb(220,220,220);"
+	data-top="background-color: rgb(255,255,255);">
+	<div>
+		<h2>Websites</h2>
+		<p>My first experience with websites, was rewritting the reporting framework for the Tivoli Provisioning Manager from scratch.
+		The project made heavy use of JSPs running on top of WebSphere and backed by DB2.
+		</p>
+		
+		<p>
+		In my next project, at Marsh Canada, I dove deep into the UI side. I built and extended javascript pages and components, based on YUI and Ajax. 
+		In the process I gained a new appreciation for how beautiful javascript code can actually be.
+		</p>
+
+		<p>
+		At Kobo, I was asked to join a SWAT team focused on improving the performance of the kobobooks.com website, in order to handle expected huge spikes in traffic.
+		The site is powered by .NET, backed by MS SQL and runs on IIS. We transitioned to a service oriented architecture and started using Membase (now Couchbase) 
+		while also doing various refactoring work to improve performance. The project was a success, as the website performed well even at peak traffic spikes.
+		</p>
+
+		<p>
+		I continue occasionally building websites on the side, to try to stay on top of emerging trends and technologies. One recent example is "idealist". 
+		It's a website internal to Kobo built using django, running on apache and backed by postgresql. 
+		Essentially it's an image-heavy brainstorming tool that allows employees to submit cool ideas and features we should build.
+		</p>
+	</div>
+</div>
+
+<div id="page4" class="container-fluid"
+	data-0="background-color: rgb(255,255,255);"
+	data-top="background-color: rgb(220,220,220);">
+	<div>
+		<h2>Desktop Applications</h2>
+		<p>
+		Content is the lifeblood of an eBook company. At Kobo I built the original content processing system. 
+		It took books from publishers in various formats, parsed and converted them into a proprietary format to be consumed by our clients.
+		The system was built in .NET and backed by MS SQL.
+		</p>
+
+		<p>
+		Later on while building the eReader devices, my team created the Kobo desktop application. 
+		Developed in Linux, it's built with C++ using Qt and runs on Windows as well as OS X.
+		</p>
+	</div>
+</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript">
+	    var s = skrollr.init();
+	</script>
   </body>
 </html>

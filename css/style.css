@@ -1,5 +1,4 @@
 #profile {
-	margin-top: 50px;
 	background-color: #be7169;
 	color: white;
 }
@@ -24,6 +23,7 @@
 	-9px 9px 0px 0px #adadad,  /*3D bottom border colour*/
 	-5px 5px 40px 0px rgba(0,0,0,0.50);
 	-webkit-transform: translate(8px, -8px);
+	transform: translate(8px, -8px);
 }
 
 /* delete me */
