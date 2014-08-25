@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Robert | I build things</title>
+	<title>Robert | I build stuff</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS -->
-    <link href="css/style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	 
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="css/owl.theme.css">
+	 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+	 
+	<!-- Include js plugin -->
+	<script src="js/owl.carousel.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,11 +33,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-
-<div id="page1" class="container-fluid"
-	data-0="background-color: rgb(255,255,255);"
-	data-250="background-color: rgb(220,220,220);">
+<body style="height: 5000px;">
+<div id="page1" class="container-fluid page odd">
 	<div class="row-fluid">
 		<div class="col-md-2">
 			<div id="profile" class="tile">
@@ -32,7 +43,7 @@
 					Robert Beghian
 				</span>
 				<span id="info" class="profile-info">
-					I write code to make computers do stuff. I've built devices, mobile apps, websites and desktop applications.
+					I write code to make computers do things. I've built devices, mobile apps, websites and desktop applications.
 				</span>
 				<span id="contact" class="profile-info">
 					vasken@gmail.com
@@ -42,131 +53,327 @@
 		<div id="content" class="col-md-9">
 			<div class="row">
 				<div class="col-sm-6">
-					<div id="devices" class="tile heading entry text-center animate">
-						<img src="img/devices.png" alt="devices" class="entry-img center-block img-responsive img-rounded">
-						Devices
-					</div>
+					<a href="#page2">
+						<div id="content-devices" class="tile page1-heading page1-entry text-center animate">
+							<img src="img/devices.png" alt="devices" class="entry-img center-block img-responsive img-rounded">
+							Devices
+						</div>
+					</a>
 				</div>
 				<div class="col-sm-6">
-					<div id="apps" class="tile heading entry text-center animate">
-						<img src="img/apps-isometric.png" alt="apps" class="entry-img center-block img-responsive img-rounded">
-						Phone Apps
-					</div>
+					<a href="#page3">
+						<div id="content-apps" class="tile page1-heading page1-entry text-center animate">
+							<img src="img/apps-isometric.png" alt="apps" class="entry-img center-block img-responsive img-rounded">
+							Android Apps
+						</div>
+					</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<div id="sites" class="tile heading entry text-center animate">
-						<img src="img/websites.png" alt="sites" class="entry-img center-block img-responsive img-rounded">
-						Websites
-					</div>
+					<a href="#page4">
+						<div id="content-sites" class="tile page1-heading page1-entry text-center animate">
+							<img src="img/websites.png" alt="sites" class="entry-img center-block img-responsive img-rounded">
+							Websites
+						</div>
+					</a>
 				</div>
 				<div class="col-sm-6">
-					<div id="desktop" class="tile heading entry text-center animate">
-						<img src="img/desktop.png" alt="desktop" class="entry-img center-block img-responsive img-rounded">
-						Desktop
+					<a href="#page5">
+						<div id="content-desktop" class="tile page1-heading page1-entry text-center animate">
+							<img src="img/desktop.png" alt="desktop" class="entry-img center-block img-responsive img-rounded">
+							Desktop
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="page2" class="container-fluid page even">
+	<div class="row-fluid">
+		<div class="col-md-offset-2 col-sm-9">
+			<a class="arrow white" href="#page2"></a>
+			<div>
+				<h2 class="leading">Devices</h2>
+				<div class="header-underline"></div>
+
+				<p>In 2010 I started working on Kobo's first E-Ink device. 
+				Since then, I've helped create 8 eReaders which got faster and prettier while winning industry awards.
+				</p>
+
+				<p>E-Ink readers are devices designed to mimic the experience of reading on a regular piece of paper. 
+				They have high res, low-glare screens which last for months before needing to be charged and can carry a user's entire book library.
+				</p>
+				
+				<div class="header-underline"></div>
+
+				<div id="device-carousel" class="owl-carousel">
+					<div>
+						<img class="pull-left img-responsive" src="img/kobo1.png"></img> 
+						<p class="carousel-txt">
+						In 2010 <strong style="color: #79a3b9">The Kobo</strong> was born.<br/>
+					    It had a big blue button and would sync your library via bluetooth.
+						</p>
+					</div>
+					<div>
+						<img class="pull-left img-responsive" src="img/kobo2.png"></img>
+						<p class="carousel-txt">
+							The next generation was the <strong style="color: #9e9c9d">Kobo Wifi</strong>.
+							You could now sync directly to the cloud!
+						</p>
+					</div>
+					<div>
+						<img class="pull-left img-responsive" src="img/kobo3.png"></img>
+						<p class="carousel-txt">
+							The <strong style="color: #fcfcfc">Kobo Touch</strong> used a touchscreen and won awards.
+						</p>
+					</div>
+					<div>
+						<img class="pull-left img-responsive"  src="img/kobo4.png"></img>
+						<p class="carousel-txt">
+							Our next device, the <strong style="color: #7fd3ce">Kobo Glo</strong>, introduced a front light
+						</p>
+						<blockquote class="blockquote-reverse">	
+							<div>
+							"One of the fastest, most responsive e-readers we've used."
+							</div>
+							<footer><cite title="Engadget">PC World</cite></footer>
+						</blockquote>
+					</div>
+					<div>
+						<img class="pull-left img-responsive"  src="img/kobo5.png"></img>
+						<p class="carousel-txt">
+							Next we went small with the <strong style="color: #ffcc11">Kobo Mini</strong>
+						</p>
+						<blockquote class="blockquote-reverse">	
+							<div>
+							"The Mini is probably lighter than this week's issue of The New Yorker."
+							</div>
+							<footer><cite title="Engadget">Huffington Post</cite></footer>
+						</blockquote>
+					</div>
+					<div>
+						<img class="pull-left img-responsive"  src="img/kobo6.png"></img>
+						<p class="carousel-txt">
+							And then we went big with the <strong style="color: #b7aba7">Kobo Aura HD</strong>
+						</p>
+						<blockquote class="blockquote-reverse">	
+							<div>
+							"the Porsche of eReaders."
+							</div>
+							<footer><cite title="Engadget">PCMag.com</cite></footer>
+						</blockquote>
+					</div>
+					<div>
+						<img class="pull-left img-responsive"  src="img/kobo7.png"></img>
+						<blockquote class="blockquote-reverse">	
+							<div>
+							"Kobo Aura is the best flagship eReader on the market." 
+							</div>
+							<footer>Sept 5, 2013 <cite title="Engadget">Engadget</cite></footer>
+						</blockquote>
+					</div>
+					<img class="img-responsive" src="img/kobo8.jpg"></img>
+				</div>
+
+				<div class="header-underline"></div>
+				<p> The devices are built in C++ on top of the Qt framework and they run Linux. 
+				Having been on the project from the very beginning gave me an opportunity to work on pretty much every aspect of it.
+				In particular, I've spent a bunch of time working on the persistance layer (including a custom cache) and the syncing component. 
+				I've also helped improve the speed and reliability of opening books and wifi connectivity.
+				</p>
+				<div class="header-underline"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="page3" class="container-fluid page odd">
+	<div class="row-fluid">
+		<div class="arrow-container gray"></div>
+		<div class="col-md-offset-2 col-sm-9">
+			<a class="arrow gray" href="#page3"></a>
+			<div>
+				<h2 class="leading">Android Apps</h2>
+				<div class="header-underline"></div>
+
+				<p>
+				Android is an operating system built by Google, which today powers more mobile devices than Windows and iOS combined.
+				</p>
+
+				<div class="info">
+					<span class="infograph grey-box">
+						<span class="info-text">Applications</span>
+						<span class="info-num">36</span>
+						<span class="info-icon glyphicon glyphicon-stats"></span>
+					</span>
+					<span class="infograph red-box">
+						<span class="info-text">Downloads</span>
+						<span class="info-num">2.42 million</span>
+						<span class="info-icon glyphicon glyphicon-user"></span>
+					</span>
+					<span class="infograph silver-box">
+						<span class="info-text">Avg Rating</span>
+						<span class="info-num red">4.1</span>
+						<span class="info-icon glyphicon glyphicon-star"></span>
+					</span>
+				</div>
+
+				<p>In spring 2008, I pitched an idea using an Android app, to Y Combinator.
+				Later that year, I prototyped the original Kobo phone app for Android. 
+				I eventually started working on it full time and released it to the public early 2009.
+				Since then, I've been playing around with it in my free time and occasionally releasing free apps.
+				</p>
+
+				<img src="img/apps-frontview.png" alt="apps" class="center-block img-responsive img-rounded">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="page4" class="container-fluid page even">	
+	<div class="row-fluid">
+		<div class="col-md-offset-2 col-sm-9">
+			<a class="arrow white" href="#page4"></a>
+			<div class="container-fluid">
+				<h2 class="leading">Websites</h2>
+				<div class="header-underline"></div>
+				<div id="site1" class="container-fluid row-fluid site">
+					<div class="site-text col-md-6 vcenter">
+						<p class="">My first experience with websites, was rewritting the reporting framework for the Tivoli Provisioning Manager from scratch.
+						The project made heavy use of JSPs running on top of WebSphere and backed by DB2.
+						</p>
+						<p class="">
+						In my next project, at Marsh Canada, I dove deep into the UI side. I built and extended javascript pages and components, based on YUI and Ajax. 
+						In the process I gained a new appreciation for how beautiful javascript code can actually be.
+						</p>
+						<div class="site-list">
+							<ul>
+								<li>Javascript & YUI</li>
+								<li>Java</li>
+								<li>JSP</li>
+								<li>WebSphere</li>
+								<li>DB2</li>
+							</ul>
+						</div>
+					</div
+					><div class="col-md-6 vcenter">
+						<img src="img/site1.png" alt="jsp, javascript" class="img-responsive site-img">
+					</div>
+				</div>
+				
+				<div id="site2" class="container-fluid row-fluid site">
+					<img src="img/site2.png" alt=".net, c#" class="img-responsive site-img col-md-6">
+					<div class="col-md-6">
+						<p>
+						At Kobo, I was asked to join a SWAT team focused on improving the performance of the kobobooks.com website, in order to handle expected huge spikes in traffic.
+						We transitioned to a service oriented architecture and started using Membase (now Couchbase) 
+						while also doing various refactoring work to improve performance.
+						</p>
+						<div class="site-list">
+							<ul>
+								<li>.NET</li>
+								<li>IIS</li>
+								<li>Couchbase</li>
+								<li>MS SQL</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div id="site3" class="container-fluid row-fluid site">
+					<div class="col-sm-6">
+						<p>
+						I continue occasionally building websites on the side, to try to stay on top of emerging trends and technologies. One recent example is "idealist". 
+						It's a website internal to Kobo built using django, running on apache and backed by postgresql. 
+						Essentially it's an image-heavy brainstorming tool that allows employees to submit cool ideas and features we should build.
+						</p>
+						<div class="site-list">
+							<ul>
+								<li>Django</li>
+								<li>Python</li>
+								<li>Apache</li>
+								<li>Postgresql</li>
+							</ul>
+						</div>
+					</div>
+					<img src="img/site3.png" alt="python, django" class="img-responsive site-img col-sm-6">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="page5" class="container-fluid page odd">
+	<div class="row-fluid">
+		<div class="col-md-offset-2 col-sm-9">
+			<a class="arrow gray" href="#page5"></a>
+			<div>
+				<h2 class="leading">Desktop Applications</h2>
+				<div class="header-underline"></div>
+				<div id="os1" class="container-fluid row-fluid os">
+					<div class="col-sm-7 col-xs-7">
+						<p>
+						Content is the lifeblood of an eBook company. At Kobo I built the original content processing system. 
+						It took books from publishers in various formats, parsed and converted them into a proprietary format to be consumed by our clients.
+						The system was built in .NET and backed by MS SQL.
+						</p>
+						<div class="site-list">
+							<ul>
+								<li>.NET</li>
+								<li>Windows</li>
+								<li>MS SQL</li>
+							</ul>
+						</div>
+					</div>
+					<img src="img/os1.png" alt="" class="img-responsive site-img col-sm-3 col-xs-5">
+				</div>
+
+				<div id="os2" class="container-fluid row-fluid os">
+					<img src="img/desktop.png" alt="" class="img-responsive site-img col-sm-6">
+					<div class="col-sm-6">
+						<p>
+						Later on while building the eReader devices, my team created the Kobo desktop application. 
+						Developed in Linux, it's built with C++ using Qt and runs on Windows as well as OS X.
+						</p>
+						<div class="site-list">
+							<ul>
+								<li>C++</li>
+								<li>Qt</li>
+								<li>Windows/Linux/OS X</li>
+								<li>SQLite</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div id="page2" class="container-fluid"
-	data-500="background-color: rgb(220,220,220);"
-	data-top="background-color: rgb(255,255,255);">
-	<div 
-		data-0="opacity: 0"
-		data-500="opacity: 1">
-		<h2>Devices</h2>
-		<p>eInk readers are devices designed to mimic the experience of reading on a regular piece of paper. 
-		They have with high res, low-glare screens which last for months before needing to be charged and can carry a user's entire library.
-		</p>
-		
-		<p>In 2010 I started working on Kobo's first eInk device. Soon after, "The Kobo" was born. 
-		It had a big blue button and it would sync your library via bluetooth from a Blackberry device. 
-		Over the next four years, I helped create 8 eReaders which got bigger, faster and prettier.
-		</p>
 
-		<p> The device is built using C++ and the Qt framework and runs on top of Linux. 
-		Having been on the project from the very beginning gave me an opportunity to work on pretty much every aspect of it.
-		In particular, I've spent a bunch of time working on the persistance layer (including a custom cache) and the syncing component. 
-		I've also helped improve the speed and reliability of opening books and wifi connectivity.
-		</p>
-	</div>
-</div>
-<div id="page3" class="container-fluid"
-	data-0="background-color: rgb(255,255,255);"
-	data-top="background-color: rgb(220,220,220);">
-	<div>
-		<h2>Phone Apps</h2>
-		<p>
-		Android is an operating system built by Google, which today powers more mobile devices than Windows and iOS combined.
-		</p>
-
-		<p>In spring 2008, I built a prototype Android application which I used as part of a pitch to Y Combinator.
-		While they didn't like us enough to fund us, I became a big believer in Android as a platform.
-		Later in 2008, I prototyped the original Kobo(at the time called Shortcovers) phone app for Android. 
-		I eventually started working on it full time and released it to the public early 2009.
-		</p>
-
-		<p>
-		Since then, I've been playing with apps in my spare time. I've published over three dozen free, simple applications which have been downloaded by millions of users.
-		</p>
-	</div>
-</div>
-<div id="page4" class="container-fluid"
-	data-0="background-color: rgb(220,220,220);"
-	data-top="background-color: rgb(255,255,255);">
-	<div>
-		<h2>Websites</h2>
-		<p>My first experience with websites, was rewritting the reporting framework for the Tivoli Provisioning Manager from scratch.
-		The project made heavy use of JSPs running on top of WebSphere and backed by DB2.
-		</p>
-		
-		<p>
-		In my next project, at Marsh Canada, I dove deep into the UI side. I built and extended javascript pages and components, based on YUI and Ajax. 
-		In the process I gained a new appreciation for how beautiful javascript code can actually be.
-		</p>
-
-		<p>
-		At Kobo, I was asked to join a SWAT team focused on improving the performance of the kobobooks.com website, in order to handle expected huge spikes in traffic.
-		The site is powered by .NET, backed by MS SQL and runs on IIS. We transitioned to a service oriented architecture and started using Membase (now Couchbase) 
-		while also doing various refactoring work to improve performance. The project was a success, as the website performed well even at peak traffic spikes.
-		</p>
-
-		<p>
-		I continue occasionally building websites on the side, to try to stay on top of emerging trends and technologies. One recent example is "idealist". 
-		It's a website internal to Kobo built using django, running on apache and backed by postgresql. 
-		Essentially it's an image-heavy brainstorming tool that allows employees to submit cool ideas and features we should build.
-		</p>
-	</div>
-</div>
-
-<div id="page4" class="container-fluid"
-	data-0="background-color: rgb(255,255,255);"
-	data-top="background-color: rgb(220,220,220);">
-	<div>
-		<h2>Desktop Applications</h2>
-		<p>
-		Content is the lifeblood of an eBook company. At Kobo I built the original content processing system. 
-		It took books from publishers in various formats, parsed and converted them into a proprietary format to be consumed by our clients.
-		The system was built in .NET and backed by MS SQL.
-		</p>
-
-		<p>
-		Later on while building the eReader devices, my team created the Kobo desktop application. 
-		Developed in Linux, it's built with C++ using Qt and runs on Windows as well as OS X.
-		</p>
-	</div>
-</div>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
     <script type="text/javascript">
 	    var s = skrollr.init();
+
+		$(document).ready(function() {
+			$("#device-carousel").owlCarousel({
+				navigation : true, // Show next and prev buttons
+				navigationText: [
+				"<span style='font-size:30px' class='glyphicon glyphicon-chevron-left'></span>",
+				"<span style='font-size:30px' class='glyphicon glyphicon-chevron-right'></span>"
+				],
+				slideSpeed : 300,
+				paginationSpeed : 400,
+				autoHeight : true,
+				singleItem:true
+			});
+		});
+		
 	</script>
   </body>
 </html>
