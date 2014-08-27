@@ -1,13 +1,57 @@
+/********************************/
+/**			DOCUMENT			*/
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 17px;
 }
 
+a {
+	color: black;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	text-align: center;
+	max-width: 900px;
+	-webkit-font-smoothing: antialiased;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blockquote-reverse {
+	margin-right: 20px;
+}
+
+/********************************/
+/**				PROFILE			*/
+#profile {
+	background-color: #be7169;
+	color: white;
+	z-index: 100;
+	position: fixed;
+	padding: 0px;
+}
+
 .profile-name {
 	font-size: 26px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100; 
+}
+
+.profile-pic {
+	margin-left: 15px;
+	margin-top: 5px;
 }
 
 .profile-info {
@@ -38,21 +82,47 @@ body {
 	text-align: left;
 }
 
+.profile-menu {
+	display: none;
+	height: 100%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.profile-menu-off {
+	background-color: rgba(190,113,105, 1);
+}
+
+.profile-menu-off:hover {
+	background-color: rgba(100,100,100, 1);
+}
+
+.profile-menu>li {
+	height: 100%;
+	line-height: 60px;
+	font-weight: 100;
+	font-size: 25px;
+}
+
+.profile-menu>li>a {
+	color: white;
+}
+
+.profile-menu-on {
+	background-color: rgba(100,100,100, 1);
+	color: white;
+}
+
+/********************************/
+/**				PAGES			*/
+
 .page {
 	padding-bottom: 100px;
 }
 
-/*		 Page 1		*/
-
-#profile {
-	background-color: #be7169;
-	color: white;
-}
-
-a {
-	color: black !important;
-	text-decoration: none !important;
-}
+/********************************/
+/**				PAGE 1			*/
 
 .animate {
 	transition: all 0.3s ease;
@@ -103,7 +173,9 @@ a {
 	max-height: 300px;
 }
 
-/*		 Page 2		*/
+/********************************/
+/**				PAGE 2			*/
+
 #page2 {
 /*	opacity: 0;*/
 
@@ -148,8 +220,10 @@ a {
 .leading {
 	margin-top: 50px;
 	font-size: 70px;
-	font-family: 'Abel', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	font-weight: 100;
+	letter-spacing: 10px;
 }
 
 .header-underline {
@@ -158,23 +232,6 @@ a {
 	position: relative;
 	margin: 20px auto 19px;
 	border-top: 1px solid #d0d0d0;
-}
-
-p {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 17px;
-	text-align: center;
-	max-width: 900px;
-	-webkit-font-smoothing: antialiased;
-
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.blockquote-reverse {
-	margin-right: 20px;
 }
 
 /********************
@@ -202,8 +259,8 @@ p {
 }
 
 
-/**************************/
-/****	Page 3	*/
+/********************************/
+/**				PAGE 3			*/
 .info {
 	text-align: center;
 	margin:  25px 0;
@@ -259,8 +316,9 @@ p {
 	background-color: #f4f4f4;
 }
 
-/*************************************/
-/*******	Page4					*/
+/********************************/
+/**				PAGE 4			*/
+
 .site {
 	padding: 20px;
 }

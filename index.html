@@ -33,15 +33,79 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body style="height: 5000px;">
+<body>
+		
 <div id="page1" class="container-fluid page odd">
 	<div class="row-fluid">
-		<div id="profile" class="tile col-md-2">
-			<img id="pic" src="img/me.png" alt="me" class="img-responsive center-block img-circle">
-			<p id="name" class="profile-name">
+		<div id="profile" class="col-md-2"
+			data-0="opacity: 1; left: 15px; margin-top: 15px; height:530px; @class:!tile col-md-2"
+			data-400="opacity: 0.3; left: 0px; height: 200px; margin-top: 0px; @class:!col-md-12; background-color: rgba(190,113,105, 1)"
+			data-500="opacity: 0.95; height: 70px; background-color: rgba(190,113,105, 1); @class:!col-md-12; background-color: rgba(190,113,105, 1)"
+		>
+
+			<ul class="list-inline profile-menu" style="display: none; float: right;"
+				data-0="display:none;"
+				data-600="display:inline;"
+			>
+				<li class="profile-menu-off"
+					data-anchor-target="#page1"
+					data-0="@class:! profile-menu-off"
+					data-top="@class:! profile-menu-on"
+					data-top-bottom="@class:! profile-menu-off"
+				>
+					<a href="#page1">Home</a>
+				</li
+				><li class="profile-menu-off"
+					data-anchor-target="#page2"
+					data-0="@class:! profile-menu-off"
+					data-top="@class:! profile-menu-on"
+					data-top-bottom="@class:! profile-menu-off"
+				>
+					<a href="#page2">Devices</a>
+				</li
+				><li class="profile-menu-off"
+					data-anchor-target="#page3"
+					data-0="@class:! profile-menu-off"
+					data-top="@class:! profile-menu-on"
+					data-top-bottom="@class:! profile-menu-off"
+				>
+					<a href="#page3">Mobile</a>
+				</li
+				><li class="profile-menu-off"
+					data-anchor-target="#page4"
+					data-0="@class:! profile-menu-off"
+					data-top="@class:! profile-menu-on"
+					data-top-bottom="@class:! profile-menu-off"
+				>
+					<a href="#page4">Websites</a>
+				</li
+				><li class="profile-menu-off"
+					data-anchor-target="#page5"
+					data-0="@class:! profile-menu-off"
+					data-top="@class:! profile-menu-on"
+					data-top-bottom="@class:! profile-menu-off"
+				>
+					<a href="#page5">Native</a>
+				</li>
+			</ul>
+
+			<img src="img/me.png" alt="me" class="img-responsive center-block img-circle"
+				data-0="height:167px; width: 150px; @class:!img-responsive center-block img-circle; display: block;"
+				data-400="@class:!img-responsive img-circle; display:inline"
+				data-500="height:60px; width: 55px; @class:!profile-pic img-responsive img-circle;"
+			>
+
+			<p class="profile-name"
+				data-0="display:block"
+				data-400="display:inline"
+			>
 				Robert Beghian
 			</p>
-			<span id="info" class="profile-info">
+
+			<span id="info" class="profile-info"
+					data-0="opacity: 1; display: block"
+					data-400="opacity: 0; display: none"
+			>
 				<div class="profile-loc">
 					<img class="profile-loc-img" src="img/pin.png"></img>
 					<p class="profile-loc-txt"> Toronto, Canada </p>
@@ -52,12 +116,13 @@
 				<p class="profile-sm">
 					I write code to make computers do things. I've built devices, phone apps, websites and desktop applications.
 				</p>
+				<p id="contact" class="profile-info">
+					vasken@gmail.com
+				</p>
 			</span>
-			<p id="contact" class="profile-info">
-				vasken@gmail.com
-			</p>
 		</div>
-		<div id="content" class="col-md-9">
+	</div>
+		<div id="content" class="col-md-offset-2 col-md-9">
 			<div class="row">
 				<div class="col-sm-6">
 					<a href="#page2">
@@ -100,7 +165,7 @@
 
 <div id="page2" class="container-fluid page even">
 	<div class="row-fluid">
-		<div class="col-md-offset-2 col-sm-9">
+		<div class="col-md-offset-1 col-sm-10">
 			<a class="arrow white" href="#page2"></a>
 			<div>
 				<h2 class="leading">Devices</h2>
@@ -182,7 +247,7 @@
 							<footer>Sept 5, 2013 <cite title="Engadget">Engadget</cite></footer>
 						</blockquote>
 					</div>
-					<img class="img-responsive" src="img/kobo8.jpg"></img>
+					<img class="img-responsive" src="img/kobo8.png"></img>
 				</div>
 
 				<div class="header-underline"></div>
@@ -200,7 +265,7 @@
 <div id="page3" class="container-fluid page odd">
 	<div class="row-fluid">
 		<div class="arrow-container gray"></div>
-		<div class="col-md-offset-2 col-sm-9">
+		<div class="col-md-offset-1 col-sm-10">
 			<a class="arrow gray" href="#page3"></a>
 			<div>
 				<h2 class="leading">Android Apps</h2>
@@ -243,7 +308,7 @@
 
 <div id="page4" class="container-fluid page even">	
 	<div class="row-fluid">
-		<div class="col-md-offset-2 col-sm-9">
+		<div class="col-md-offset-1 col-sm-10">
 			<a class="arrow white" href="#page4"></a>
 			<div class="container-fluid">
 				<h2 class="leading">Websites</h2>
@@ -316,7 +381,7 @@
 
 <div id="page5" class="container-fluid page odd">
 	<div class="row-fluid">
-		<div class="col-md-offset-2 col-sm-9">
+		<div class="col-md-offset-1 col-sm-10">
 			<a class="arrow gray" href="#page5"></a>
 			<div>
 				<h2 class="leading">Desktop Applications</h2>
