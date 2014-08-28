@@ -19,6 +19,7 @@ a:hover {
 p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
+	line-height: 1.7;
 	font-size: 17px;
 	text-align: center;
 	max-width: 900px;
@@ -109,14 +110,12 @@ p {
 	line-height: 70px;
 	font-weight: 100;
 	font-size: 25px;
+	font-weight: 400;
+	font-variant: small-caps;
 	
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-
-	font-weight: 400;
-	font-size: 25px;
-	font-variant: small-caps;
 }
 
 .profile-menu>li>a {
@@ -245,15 +244,8 @@ p {
 	border-top: 1px solid #d0d0d0;
 }
 
-/********************
-/** Carousel	*/
-.carousel-txt {
-	font-size: 50px;
-	font-family: 'Abel', sans-serif;
-	text-align: center;
-	max-width: 100%;
-}
-
+/********************/
+/**		Carousel	*/
 
 .owl-theme .owl-controls .owl-buttons div {
 	background: none;
@@ -269,6 +261,23 @@ p {
 	right: -45px;
 }
 
+.owl-item > div > p {
+	max-width: none;
+	text-align: center;
+	margin-right: 40px;
+}
+
+.carousel-title {
+	font-size: 50px;
+	font-family: 'Abel', sans-serif;
+	text-align: center;
+	max-width: 100%;
+}
+
+.carousel-award {
+	float: left;
+	max-height: 100px;
+}
 
 /********************************/
 /**				PAGE 3			*/
