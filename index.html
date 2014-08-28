@@ -20,7 +20,7 @@
 	 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
 	 
 	<!-- Include js plugin -->
 	<script src="js/owl.carousel.js"></script>
@@ -38,8 +38,8 @@
 <div id="page1" class="container-fluid page odd">
 	<div class="row-fluid">
 		<div id="profile" class="col-md-2"
-			data-0="opacity: 1; left: 15px; margin-top: 15px; height:530px; @class:!tile col-md-2"
-			data-400="opacity: 0.3; left: 0px; height: 200px; margin-top: 0px; @class:!col-md-12; background-color: rgba(190,113,105, 1)"
+			data-0="opacity: 1; left: 10px; margin-top: 15px; height:500px; @class:!tile col-md-2"
+			data-400="opacity: 0.3; left: 0px; height: 200px; margin-top: 0px; position: fixed; @class:!col-md-12; background-color: rgba(190,113,105, 1)"
 			data-500="opacity: 0.95; height: 70px; background-color: rgba(190,113,105, 1); @class:!col-md-12; background-color: rgba(190,113,105, 1)"
 		>
 
@@ -47,51 +47,27 @@
 				data-0="display:none;"
 				data-600="display:inline;"
 			>
-				<li class="profile-menu-off"
-					data-anchor-target="#page1"
-					data-0="@class:! profile-menu-off"
-					data-top="@class:! profile-menu-on"
-					data-top-bottom="@class:! profile-menu-off"
-				>
+				<li id="page1-menu" class="profile-menu-item">
 					<a href="#page1">Home</a>
 				</li
-				><li class="profile-menu-off"
-					data-anchor-target="#page2"
-					data-0="@class:! profile-menu-off"
-					data-top="@class:! profile-menu-on"
-					data-top-bottom="@class:! profile-menu-off"
-				>
+				><li id="page2-menu" class="profile-menu-item">
 					<a href="#page2">Devices</a>
 				</li
-				><li class="profile-menu-off"
-					data-anchor-target="#page3"
-					data-0="@class:! profile-menu-off"
-					data-top="@class:! profile-menu-on"
-					data-top-bottom="@class:! profile-menu-off"
-				>
+				><li id="page3-menu" class="profile-menu-item">
 					<a href="#page3">Mobile</a>
 				</li
-				><li class="profile-menu-off"
-					data-anchor-target="#page4"
-					data-0="@class:! profile-menu-off"
-					data-top="@class:! profile-menu-on"
-					data-top-bottom="@class:! profile-menu-off"
-				>
+				><li id="page4-menu" class="profile-menu-item">
 					<a href="#page4">Websites</a>
 				</li
-				><li class="profile-menu-off"
-					data-anchor-target="#page5"
-					data-0="@class:! profile-menu-off"
-					data-top="@class:! profile-menu-on"
-				>
+				><li id="page5-menu" class="profile-menu-item">
 					<a href="#page5">Native</a>
 				</li>
 			</ul>
 
-			<img src="img/me.png" alt="me" class="img-responsive center-block img-circle"
-				data-0="height:167px; width: 150px; @class:!img-responsive center-block img-circle; display: block;"
-				data-400="@class:!img-responsive img-circle; display:inline"
-				data-500="height:60px; width: 55px; @class:!profile-pic img-responsive img-circle;"
+			<img src="img/me.png" alt="me" class="profile-pic img-responsive center-block img-circle"
+				data-0="height:167px; width: 150px; @class:!profile-pic img-responsive center-block img-circle; display: block;"
+				data-400="@class:!profile-pic-small img-responsive img-circle; display:inline"
+				data-500="height:60px; width: 55px; @class:!profile-pic-small img-responsive img-circle;"
 			>
 
 			<p class="profile-name"
@@ -450,6 +426,26 @@
 				}, 500);
 				return false;
 			});
+
+			$('#page1').waypoint(function(direction) {
+				$('#page1-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
+			}, { offset: 10 });
+			$('#page2').waypoint(function(direction) {
+				$('#page1-menu').toggleClass("profile-menu-item" + '-on', direction === 'up');
+				$('#page2-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
+			}, { offset: 10 });
+			$('#page3').waypoint(function(direction) {
+				$('#page2-menu').toggleClass("profile-menu-item" + '-on', direction === 'up');
+				$('#page3-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
+			}, { offset: 10 });
+			$('#page4').waypoint(function(direction) {
+				$('#page3-menu').toggleClass("profile-menu-item" + '-on', direction === 'up');
+				$('#page4-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
+			}, { offset: 10 });
+			$('#page5').waypoint(function(direction) {
+				$('#page4-menu').toggleClass("profile-menu-item" + '-on', direction === 'up');
+				$('#page5-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
+			}, { offset: 10 });
 		});
 
 	</script>
