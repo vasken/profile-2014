@@ -1,5 +1,7 @@
 # README #
 
-This repository contains my portfolio website
+I decided to show some stuff I've built - mostly as an excuse to play around with some new hotness. 
+- Bootstrap + LESS
+- skrollr
+- waypoints
 
-It's a static showcase built with HTML/CSS. It's using Bootstrap and some CSS3 goodies.
