@@ -53,8 +53,21 @@ p {
 	margin-top: 5px;
 }
 
+.profile-pic-menu {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	float: left;
+}
+
+.profile-name-menu {
+	float: left;
+	color: white;
+	font-size: 22px;
+	font-weight: 100; 
+}
+
 .profile-pic-small {
-	margin-left: 15px;
+	margin-left: 30px;
 	margin-top: 5px;
 }
 
@@ -89,15 +102,24 @@ p {
 
 .profile-menu {
 	display: none;
-	height: 100%;
+	background-color: rgba(190,113,105, 1);
+	border: 0;
+}
+
+.profile-menu .navbar-toggle .icon-bar {
+	background-color: rgb(100,100,100);
 }
 
 .profile-menu-item {
 	background-color: rgba(190,113,105, 1);
 }
 
-.profile-menu-item:hover {
-	background-color: rgba(100,100,100, 1);
+.nav>li>a:hover {
+	background-color: rgb(100,100,100);
+}
+
+.navbar-nav>li>a {
+	line-height: 40px;
 }
 
 .profile-menu-item-on {
@@ -105,9 +127,8 @@ p {
 	color: white;
 }
 
-.profile-menu>li {
+.profile-menu-item {
 	height: 100%;
-	line-height: 70px;
 	font-weight: 100;
 	font-size: 25px;
 	font-weight: 400;
@@ -118,10 +139,32 @@ p {
 	transition: all 0.3s;
 }
 
-.profile-menu>li>a {
+.profile-menu-item>a {
 	display: block;
 	color: white;
 	padding: 0 20px;
+}
+
+
+#top-link-block {
+	position: fixed; /* keeps it on the bottom once in view */
+	bottom: 20px;
+	right: 20px;
+}
+
+#top-link-block>a {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(100,100,100, 1);
+
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+}
+
+#top-link-block>a:hover {
+	opacity: 1;
+	transition: opacity 0.3s;
 }
 
 /********************************/

@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS -->
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400,100'>
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Abel'>
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto+Slab:300'>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Owl Carousle -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.css">
 	 
@@ -26,51 +25,76 @@
 </head>
 <body>
 		
+<nav class="navbar navbar-fixed-top profile-menu" role="navigation"
+			data-0="display:none;"
+			data-490="display:inline;"
+	>
+  <div class="container-fluid ">
+		<img class="navbar-text img-circle profile-pic-menu" src="img/me.png" alt="me" style="height: 55px; width: 50px;"></img>
+		<p class="navbar-text profile-name-menu">Robert Beghian</p>
+		<div class="navbar-header navbar-right">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		<ul class="nav navbar-nav navbar-right">
+			<li id="page1-menu" class="profile-menu-item">
+				<a href="#page1">Home</a>
+			</li
+			><li id="page2-menu" class="profile-menu-item">
+				<a href="#page2">Devices</a>
+			</li
+			><li id="page3-menu" class="profile-menu-item">
+				<a href="#page3">Mobile</a>
+			</li
+			><li id="page4-menu" class="profile-menu-item">
+				<a href="#page4">Websites</a>
+			</li
+			><li id="page5-menu" class="profile-menu-item">
+				<a href="#page5">Native</a>
+			</li>
+		</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+<!-- child of the body tag -->
+<span id="top-link-block"
+	data-0="display:none;"
+	data-490="display:inline;"
+	>
+    <a href="#page1" class="glyphicon glyphicon-chevron-up"></a>
+</span><!-- /top-link-block -->
+
 <div id="page1" class="container-fluid page odd">
 	<div class="row-fluid">
 		<div id="profile" class="col-md-2"
-			data-0="opacity: 1; left: 10px; margin-top: 15px; height:500px; @class:!tile col-md-2"
+			data-0="opacity: 1; left: 10px; margin-top: 15px; height:600px; @class:!tile col-md-2 col-xs-3"
 			data-400="opacity: 0.3; left: 0px; height: 200px; margin-top: 0px; position: fixed; @class:!col-md-12; background-color: rgba(190,113,105, 1)"
-			data-500="opacity: 0.95; height: 70px; background-color: rgba(190,113,105, 1); @class:!col-md-12; background-color: rgba(190,113,105, 1)"
+			data-500="opacity: 0.0; height: 70px; background-color: rgba(190,113,105, 1); position:fixed; @class:!col-md-12; background-color: rgba(190,113,105, 1)"
 		>
-
-			<ul class="list-inline profile-menu" style="display: none; float: right;"
-				data-0="display:none;"
-				data-600="display:inline;"
-			>
-				<li id="page1-menu" class="profile-menu-item">
-					<a href="#page1">Home</a>
-				</li
-				><li id="page2-menu" class="profile-menu-item">
-					<a href="#page2">Devices</a>
-				</li
-				><li id="page3-menu" class="profile-menu-item">
-					<a href="#page3">Mobile</a>
-				</li
-				><li id="page4-menu" class="profile-menu-item">
-					<a href="#page4">Websites</a>
-				</li
-				><li id="page5-menu" class="profile-menu-item">
-					<a href="#page5">Native</a>
-				</li>
-			</ul>
-
 			<img src="img/me.png" alt="me" class="profile-pic img-responsive center-block img-circle"
 				data-0="height:167px; width: 150px; @class:!profile-pic img-responsive center-block img-circle; display: block;"
-				data-400="@class:!profile-pic-small img-responsive img-circle; display:inline"
-				data-500="height:60px; width: 55px; @class:!profile-pic-small img-responsive img-circle;"
+				data-400="display:inline; @class:!profile-pic-small img-responsive img-circle;"
+				data-500="height:55px; width: 50px; @class:!profile-pic-small img-responsive img-circle;"
 			>
 
 			<p class="profile-name"
 				data-0="display:block"
-				data-400="display:inline"
+				data-400="display:none"
 			>
 				Robert Beghian
 			</p>
 
 			<span id="info" class="profile-info"
-					data-0="opacity: 1; display: block"
-					data-400="opacity: 0; display: none"
+				data-0="opacity: 1; display: block"
+				data-500="opacity: 0; display: none"
 			>
 				<div class="profile-loc">
 					<img class="profile-loc-img" src="img/pin.png"></img>
@@ -88,7 +112,7 @@
 			</span>
 		</div>
 	</div>
-		<div id="content" class="col-md-offset-2 col-md-9">
+		<div id="content" class="col-md-offset-2 col-xs-offset-3 col-md-9 col-xs-9">
 			<div class="row">
 				<div class="col-sm-6">
 					<a href="#page2">
@@ -439,7 +463,7 @@
 		<div class="col-md-offset-1 col-sm-10">
 			<a class="arrow gray" href="#page5"></a>
 			<div>
-				<h2 class="leading">Desktop Applications</h2>
+				<h2 class="leading">Desktop Apps</h2>
 				<div class="header-underline"></div>
 				<div id="os1" class="container-fluid row-fluid os">
 					<div class="col-sm-7 col-xs-7">
