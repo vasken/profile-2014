@@ -185,21 +185,6 @@ p {
 
 /********************************/
 /**				PAGE 2			*/
-
-#page2 {
-/*	opacity: 0;*/
-
-	-webkit-transition: opacity 2s ease-in;
-	-moz-transition: opacity 2s ease-in;
-	-ms-transition: opacity 2s ease-in;
-	-o-transition: opacity 2s ease-in;
-	transition: opacity 2s ease-in;
-}
-
-#page2.load {
-/*	opacity: 1;*/
-}
-
 .odd {
 	background-color: rgb(255,255,255);
 }
@@ -333,11 +318,15 @@ p {
 
 .silver-box {
 	color: black;
-	background-color: #f4f4f4;
+	background-color: #e4e4e4;
+}
+
+.mid-text {
+	padding: 20px 0;
 }
 
 /********************************/
-/**				PAGE 4			*/
+/**			PAGES 4/5			*/
 
 .site {
 	padding: 20px;
