@@ -41,6 +41,7 @@ p {
 	color: white;
 	z-index: 1000;
 	padding: 0px;
+	position: fixed;
 }
 
 .profile-name {
@@ -147,6 +148,7 @@ p {
 
 
 #top-link-block {
+	display: none;
 	position: fixed; /* keeps it on the bottom once in view */
 	bottom: 20px;
 	right: 20px;
