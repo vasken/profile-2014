@@ -75,9 +75,9 @@
 <div id="page1" class="container-fluid page odd">
 	<div class="row-fluid">
 		<div id="profile" class="col-md-2"
-			data-0="opacity: 1; left: 10px; margin-top: 15px; height:700px; @class:!tile col-md-2 col-xs-3"
-			data-400="opacity: 0.3; left: 0px; height: 200px; margin-top: 0px; position: fixed; @class:!col-md-12; background-color: rgba(190,113,105, 1)"
-			data-500="opacity: 0.0; height: 70px; background-color: rgba(190,113,105, 1); position:fixed; @class:!col-md-12; background-color: rgba(190,113,105, 1)"
+			data-0="left: 10px; margin-top: 15px; @class:!tile col-md-2 col-xs-3"
+			data-400="left: 0px; margin-top: 0px; position: fixed; @class:!col-md-12;"
+			data-500="background-color: @class:!col-md-12;"
 		>
 			<img src="img/me.png" alt="me" class="profile-pic img-responsive center-block img-circle"
 				data-0="height:167px; width: 150px; @class:!profile-pic img-responsive center-block img-circle; display: block;"
@@ -86,30 +86,42 @@
 			>
 
 			<p class="profile-name"
-				data-0="display:block"
+				data-300="display:block"
 				data-400="display:none"
 			>
 				Robert Beghian
 			</p>
 
-			<span id="info" class="profile-info"
-				data-0="opacity: 1; display: block"
-				data-500="opacity: 0; display: none"
-			>
-				<div class="profile-loc">
+			<span id="info" class="profile-info">
+				<div class="profile-loc"
+					data-200="display:block"
+					data-300="display:none"
+					>	
 					<img class="profile-loc-img" src="img/pin.png"></img>
 					<p class="profile-loc-txt"> Toronto, Canada </p>
 				</div>
-				<p class="profile-xs">
+				<p class="profile-xs"
+					data-300="display:block"
+					data-400="display:none"
+					>
 					Brilliant. Hilarious. Modest.
 				</p>
-				<p class="profile-sm">
+				<p class="profile-sm"
+					data-100="display:block"
+					data-200="display:none"
+					>	
 					I write code to make computers do things. I've built devices, phone apps, websites and desktop applications.
 				</p>
-				<p class="profile-sm">
+				<p class="profile-sm"
+					data-0="display:block"
+					data-100="display:none"
+					>
 					I'm currently working on contract, revolutionizing reading. Here are a few words about some of the stuff I've made.
 				</p>
-				<p id="contact" class="profile-info">
+				<p id="contact" class="profile-info"
+					data-200="display:block"
+					data-300="display:none"
+					>	
 					vasken@gmail.com
 				</p>
 			</span>
@@ -204,7 +216,7 @@
 							<p>
 								Not 6 months after the first one, the wifi version came out.<br/>
 								Crying happened less. But so did sleep. <br/>
-								It turns out building a store and synchronizing libraries over Wi-Fi, can be tricky. Lesson Learned.
+								It turns out building a store and synchronizing libraries over Wi-Fi can be hard. Who knew.
 							</p>
 						</div>
 					</div>
