@@ -125,6 +125,10 @@ p {
 	text-align: left;
 }
 
+.profile-md {
+	text-align: left;
+}
+
 .profile-menu {
 	background-color: rgba(190,113,105, 1);
 	border: 0;
