@@ -97,6 +97,10 @@ p {
 	margin: 10px;
 }
 
+.profile-info>a {
+	color: white;
+}
+
 .profile-loc {
 	overflow: auto;
 	text-align: center;
