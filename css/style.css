@@ -57,8 +57,7 @@ p {
 
 #profile-img {
 	display: block;
-	height: 167px;
-	width: 150px;
+	padding: 5px;
 }
 
 .profile-pic {
