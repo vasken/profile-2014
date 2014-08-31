@@ -283,7 +283,6 @@ p {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	font-weight: 100;
-	letter-spacing: 8px;
 }
 
 .header-underline {
@@ -304,11 +303,11 @@ p {
 }
  
 .owl-theme .owl-controls .owl-buttons .owl-prev{
-	left: -45px;
+	left: -35px;
 }
  
 .owl-theme .owl-controls .owl-buttons .owl-next{
-	right: -45px;
+	right: -35px;
 }
 
 .owl-item > div > p {
