@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- CSS -->
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:400,100'>
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Abel'>
@@ -12,6 +13,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
 	<!-- Owl Carousle -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.css">
@@ -25,10 +27,7 @@
 </head>
 <body>
 		
-<nav class="navbar navbar-fixed-top profile-menu" role="navigation"
-			data-0="display:none;"
-			data-490="display:inline;"
-	>
+<nav id="top-nav" class="navbar navbar-fixed-top profile-menu hidden" role="navigation">
   <div class="container-fluid ">
 		<img class="navbar-text img-circle profile-pic-menu" src="img/me.png" alt="me" style="height: 55px; width: 50px;"></img>
 		<p class="navbar-text profile-name-menu">Robert Beghian</p>
@@ -65,63 +64,34 @@
 </nav>
 
 <!-- Back to Top -->
-<span id="top-link-block"
-	data-0="display:none;"
-	data-490="display:inline;"
-	>
+<span id="top-link-block" class="hidden">
     <a href="#page1" class="glyphicon glyphicon-chevron-up"></a>
 </span>
 
 <div id="page1" class="container-fluid page odd">
 	<div class="row-fluid">
-		<div id="profile" class="col-md-2"
-			data-0="left: 10px; margin-top: 15px; @class:!tile col-md-2 col-xs-3"
-			data-400="left: 0px; margin-top: 0px; position: fixed; @class:!col-md-12;"
-			data-500="background-color: @class:!col-md-12;"
-		>
-			<img src="img/me.png" alt="me" class="profile-pic img-responsive center-block img-circle"
-				data-0="height:167px; width: 150px; @class:!profile-pic img-responsive center-block img-circle; display: block;"
-				data-400="display:inline; @class:!profile-pic-small img-responsive img-circle;"
-				data-500="height:55px; width: 50px; @class:!profile-pic-small img-responsive img-circle;"
-			>
+		<div id="profile" class="tile col-md-2 col-xs-3">
+			<img id="profile-img" src="img/me.png" alt="me" class="profile-pic img-responsive center-block img-circle">
 
-			<p class="profile-name"
-				data-300="display:block"
-				data-400="display:none"
-			>
+			<p class="profile-name">
 				Robert Beghian
 			</p>
 
 			<span id="info" class="profile-info">
-				<div class="profile-loc"
-					data-200="display:block"
-					data-300="display:none"
-					>	
+				<div class="profile-loc">
 					<img class="profile-loc-img" src="img/pin.png"></img>
 					<p class="profile-loc-txt"> Toronto, Canada </p>
 				</div>
-				<p class="profile-xs"
-					data-300="display:block"
-					data-400="display:none"
-					>
+				<p class="profile-xs">
 					Brilliant. Hilarious. Modest.
 				</p>
-				<p class="profile-sm"
-					data-100="display:block"
-					data-200="display:none"
-					>	
+				<p class="profile-sm">
 					I write code to make computers do things. I've built devices, phone apps, websites and desktop applications.
 				</p>
-				<p class="profile-sm"
-					data-0="display:block"
-					data-100="display:none"
-					>
+				<p class="profile-md">
 					I'm currently working on contract, revolutionizing reading. Here are a few words about some of the stuff I've made.
 				</p>
-				<p id="contact" class="profile-info"
-					data-200="display:block"
-					data-300="display:none"
-					>	
+				<p id="contact" class="profile-info">
 					vasken@gmail.com
 				</p>
 			</span>
@@ -522,10 +492,7 @@
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
     <script type="text/javascript">
-	    var s = skrollr.init();
-
 		$(document).ready(function() {
 			$("#device-carousel").owlCarousel({
 				navigation : true, // Show next and prev buttons
@@ -545,6 +512,40 @@
 				}, 500);
 				return false;
 			});
+
+
+			$('#page1').waypoint(function(direction) {
+				$('.profile-md').toggleClass("hidden", direction==="down");
+			}, { offset: -100 });
+
+			$('#page1').waypoint(function(direction) {
+				$('.profile-sm').toggleClass("hidden", direction==="down");
+			}, { offset: -200 });
+
+			$('#page1').waypoint(function(direction) {
+				$('.profile-loc').toggleClass("hidden", direction==="down");
+				$('#contact').toggleClass("hidden", direction==="down");
+			}, { offset: -300 });
+
+			$('#page1').waypoint(function(direction) {
+				$('.profile-xs').toggleClass("hidden", direction==="down");
+				$('.profile-name').toggleClass("hidden", direction==="down");
+				$('#profile').toggleClass("col-md-12 profile-expanded", direction==="down");
+				$('#profile').toggleClass("col-md-2 col-xs-3", direction==="up");
+				$('#profile-img').toggleClass("center-block", direction==="up");
+				$('#profile-img').toggleClass("profile-pic-between", direction==="down");
+				$('#profile-img').toggleClass("profile-pic-small", direction==="down");
+			}, { offset: -400 });
+
+			$('#page1').waypoint(function(direction) {
+			}, { offset: -500 });
+
+			// Show the menu and back-to-top buttons
+			$('#page1').waypoint(function(direction) {
+				$('#top-nav').toggleClass("hidden", direction==="up");
+				$('#top-link-block').toggleClass("hidden", direction==="up");
+			}, { offset: -490 });
+
 
 			$('#page1').waypoint(function(direction) {
 				$('#page1-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
@@ -566,6 +567,15 @@
 				$('#page5-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
 			}, { offset: 10 });
 		});
+
+		// Analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-54326474-1', 'auto');
+		ga('send', 'pageview');
 
 	</script>
   </body>
