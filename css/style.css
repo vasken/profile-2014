@@ -403,7 +403,8 @@ p {
 	padding: 20px;
 }
 
-.site-img {
+.site>div>p {
+	text-align: left;
 }
 
 .site-list {
