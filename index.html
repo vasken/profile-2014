@@ -541,17 +541,11 @@
 				$('#profile-img').toggleClass("center-block", direction==="up");
 				$('#profile-img').toggleClass("profile-pic-between", direction==="down");
 				$('#profile-img').toggleClass("profile-pic-small", direction==="down");
-			}, { offset: -400 });
 
-			$('#page1').waypoint(function(direction) {
-			}, { offset: -500 });
-
-			// Show the menu and back-to-top buttons
-			$('#page1').waypoint(function(direction) {
+				// Show the menu and back-to-top buttons
 				$('#top-nav').toggleClass("hidden", direction==="up");
 				$('#top-link-block').toggleClass("hidden", direction==="up");
-			}, { offset: -490 });
-
+			}, { offset: -400 });
 
 			$('#page1').waypoint(function(direction) {
 				$('#page1-menu').toggleClass("profile-menu-item" + '-on', direction === 'down');
