@@ -50,7 +50,7 @@ p {
 	transition: all 0.3s;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 766px) {
 	#profile {
 		position: relative;
 	}
