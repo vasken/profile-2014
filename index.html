@@ -70,7 +70,7 @@
 
 <div id="page1" class="container-fluid page odd">
 	<div class="row-fluid">
-		<div id="profile" class="tile col-md-2 col-xs-4">
+		<div id="profile" class="tile col-sm-2 col-xs-11">
 			<img id="profile-img" src="img/me.png" alt="me" class="profile-pic img-responsive center-block img-circle">
 
 			<p class="profile-name">
@@ -91,17 +91,17 @@
 				<p class="profile-md">
 					I'm currently working on contract, revolutionizing reading. Here are a few words about some of the stuff I've made.
 				</p>
-				<p id="contact" class="profile-info">
-					<a href="mailto:vasken@gmail.com"><img src="img/email.png" alt="Email" /></a>
+				<p id="contact">
+					<a href="mailto:vasken@gmail.com"><img src="img/email.png" class="img-responsive" alt="Email" /></a>
 
-					<a href="https://twitter.com/vasken"><img src="img/twitter.png" alt="Tweet" /></a>
+					<a href="https://twitter.com/vasken"><img src="img/twitter.png" class="img-responsive" alt="Tweet" /></a>
 
-					<a href="http://ca.linkedin.com/pub/robert-beghian/18/259/aa7"><img src="img/linkedin.png" alt="LinkedIn"/></a>
+					<a href="http://ca.linkedin.com/pub/robert-beghian/18/259/aa7"><img src="img/linkedin.png" class="img-responsive" alt="LinkedIn"/></a>
 				</p>
 			</span>
 		</div>
 	</div>
-		<div id="content" class="col-md-offset-2 col-xs-offset-4 col-md-9 col-xs-8">
+		<div id="content" class="col-sm-offset-2 col-sm-9 col-xs-12">
 			<div class="row">
 				<div class="col-md-6">
 					<a href="#page2">
@@ -536,8 +536,8 @@
 			$('#page1').waypoint(function(direction) {
 				$('.profile-xs').toggleClass("hidden", direction==="down");
 				$('.profile-name').toggleClass("hidden", direction==="down");
-				$('#profile').toggleClass("col-md-12 col-xs-12 profile-expanded", direction==="down");
-				$('#profile').toggleClass("col-md-2 col-xs-4", direction==="up");
+				$('#profile').toggleClass("col-sm-12 col-xs-11 profile-expanded", direction==="down");
+				$('#profile').toggleClass("col-sm-2 col-xs-11", direction==="up");
 				$('#profile-img').toggleClass("center-block", direction==="up");
 				$('#profile-img').toggleClass("profile-pic-between", direction==="down");
 				$('#profile-img').toggleClass("profile-pic-small", direction==="down");

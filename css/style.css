@@ -50,6 +50,12 @@ p {
 	transition: all 0.3s;
 }
 
+@media all and (max-width: 700px) {
+	#profile {
+		position: relative;
+	}
+}
+
 #profile.profile-expanded {
 	left: 0px; 
 	margin-top: 0px; 
@@ -134,6 +140,10 @@ p {
 	border: 0;
 }
 
+#contact > a > img {
+	display: inline;
+}
+
 .profile-menu .navbar-toggle .icon-bar {
 	background-color: rgb(100,100,100);
 }
@@ -172,7 +182,6 @@ p {
 	color: white;
 	padding: 0 20px;
 }
-
 
 #top-link-block {
 	position: fixed;
