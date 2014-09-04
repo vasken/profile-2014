@@ -189,9 +189,6 @@ p {
 	transition: opacity 0.3s;
 }
 
-/********************************/
-/**				PAGES			*/
-
 .page {
 	padding-bottom: 100px;
 }
@@ -272,7 +269,7 @@ p {
 }
 
 .white {
-	border-top-color: rgb(255,255,255);
+	border-top-color: #fff;
 }
 
 .gray {
