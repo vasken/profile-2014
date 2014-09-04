@@ -1,21 +1,6 @@
 /********************************/
 /**			DOCUMENT			*/
 
-body {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 17px;
-}
-
-a {
-	color: black;
-}
-
-a:hover {
-	color: black;
-	text-decoration: none;
-}
-
 p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
@@ -28,10 +13,6 @@ p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.blockquote-reverse {
-	margin-right: 20px;
 }
 
 /********************************/
@@ -136,8 +117,7 @@ p {
 }
 
 .profile-menu {
-	background-color: rgba(190,113,105, 1);
-	border: 0;
+	font-family: 'Raleway', sans-serif;
 }
 
 #contact > a > img {
@@ -149,7 +129,7 @@ p {
 }
 
 .profile-menu-item {
-	background-color: rgba(190,113,105, 1);
+/*	background-color: rgba(190,113,105, 1);	*/
 }
 
 .nav>li>a:hover {
