@@ -67,13 +67,15 @@ p {
 }
 
 .profile-pic-menu {
+	margin-left: 15px;
 	margin-top: 5px;
 	margin-bottom: 0px;
 	float: left;
+	height: 55px;
+	width: 50px;
 }
 
 .profile-name-menu {
-	float: left;
 	color: white;
 	font-size: 22px;
 	font-weight: 100; 
@@ -113,23 +115,24 @@ p {
 }
 
 .profile-md {
-	text-align: left;
+	text-align: center;
 }
 
 .profile-menu {
 	font-family: 'Raleway', sans-serif;
 }
 
-#contact > a > img {
+.contact > a > img {
 	display: inline;
+}
+
+.navbar-text {
+	margin-top: 0px;
+	margin-bottom: 0px;;
 }
 
 .profile-menu .navbar-toggle .icon-bar {
 	background-color: rgb(100,100,100);
-}
-
-.profile-menu-item {
-/*	background-color: rgba(190,113,105, 1);	*/
 }
 
 .nav>li>a:hover {
