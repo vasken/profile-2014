@@ -129,6 +129,7 @@ p {
 .navbar-text {
 	margin-top: 0px;
 	margin-bottom: 0px;;
+	float: left;
 }
 
 .profile-menu .navbar-toggle .icon-bar {
